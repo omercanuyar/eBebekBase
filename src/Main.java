@@ -2,16 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //taking inputs and assinging them to variables
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz : ");
-        double boy = scanner.nextDouble();
+        double height = scanner.nextDouble();
 
         System.out.print("Lütfen kilonuzu giriniz : ");
-        double kilo = scanner.nextDouble();
+        double weight = scanner.nextDouble();
 
-        double indeks = kilo / (boy * boy);
+        //calculating IBM index
+        double index = weight / (height  * height );
 
-        System.out.print("Vücut Kitle İndeksiniz : " + indeks);
+        System.out.print("Vücut Kitle İndeksiniz : " + index);
     }
 }
