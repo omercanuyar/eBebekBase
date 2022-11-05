@@ -3,12 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        //taking input and assigning to variables
         String outputStarter = "Çin Zodyağı Burcunuz: ";
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Doğum Yılınızı Giriniz :");
         int birthdate = scanner.nextInt();
 
+        //if statements for months and printing
         if (birthdate%12==0){
             System.out.println(outputStarter+"Maymun");
         } else if (birthdate%12==1) {
